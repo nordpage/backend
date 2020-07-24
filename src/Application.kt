@@ -10,7 +10,7 @@ import io.ktor.server.engine.embeddedServer
 import io.ktor.util.KtorExperimentalAPI
 
 @KtorExperimentalAPI
-fun main(args: Array<String>) {
+fun main() {
     val server = embeddedServer(CIO, port = 8080) {
         routing {
             get("/") {
